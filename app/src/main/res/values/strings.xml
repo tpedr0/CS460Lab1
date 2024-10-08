@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">lab1calculator</string>
+    <string name="C">C</string>
+    <string name="AC">AC</string>
 </resources>
