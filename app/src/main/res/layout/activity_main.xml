@@ -7,12 +7,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <TextView
         android:id="@+id/solution_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="0"
+        android:text="30937807"
         android:textColor="@color/black"
         android:textSize="32dp"
         android:textAlignment="textEnd"
@@ -23,9 +24,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="0"
+        android:text="Pedro Teodoro"
         android:textColor="@color/black"
-        android:textSize="64dp"
+        android:textSize="55dp"
         android:textAlignment="textEnd"
         app:layout_constraintBottom_toTopOf="@id/button_layout"/>
 
@@ -108,7 +109,7 @@
                 android:text="7"
                 android:textColor="@color/white"
                 android:textSize="32dp"
-                android:backgroundTint="#F44336"
+                android:backgroundTint="@color/Gray"
                 app:cornerRadius="36dp"/>
 
             <com.google.android.material.button.MaterialButton
@@ -120,7 +121,7 @@
                 android:text="8"
                 android:textColor="@color/white"
                 android:textSize="32dp"
-                android:backgroundTint="#F44336"
+                android:backgroundTint="@color/Gray"
                 app:cornerRadius="36dp"/>
 
             <com.google.android.material.button.MaterialButton
@@ -132,7 +133,7 @@
                 android:text="9"
                 android:textColor="@color/white"
                 android:textSize="32dp"
-                android:backgroundTint="#F44336"
+                android:backgroundTint="@color/Gray"
                 app:cornerRadius="36dp"/>
 
             <com.google.android.material.button.MaterialButton
@@ -164,7 +165,7 @@
                 android:text="4"
                 android:textColor="@color/white"
                 android:textSize="32dp"
-                android:backgroundTint="#F44336"
+                android:backgroundTint="@color/Gray"
                 app:cornerRadius="36dp"/>
 
             <com.google.android.material.button.MaterialButton
@@ -176,7 +177,7 @@
                 android:text="5"
                 android:textColor="@color/white"
                 android:textSize="32dp"
-                android:backgroundTint="#F44336"
+                android:backgroundTint="@color/Gray"
                 app:cornerRadius="36dp"/>
 
             <com.google.android.material.button.MaterialButton
@@ -188,7 +189,7 @@
                 android:text="6"
                 android:textColor="@color/white"
                 android:textSize="32dp"
-                android:backgroundTint="#F44336"
+                android:backgroundTint="@color/Gray"
                 app:cornerRadius="36dp"/>
 
             <com.google.android.material.button.MaterialButton
@@ -220,7 +221,7 @@
                 android:text="1"
                 android:textColor="@color/white"
                 android:textSize="32dp"
-                android:backgroundTint="#F44336"
+                android:backgroundTint="@color/Gray"
                 app:cornerRadius="36dp"/>
 
             <com.google.android.material.button.MaterialButton
@@ -232,7 +233,7 @@
                 android:text="2"
                 android:textColor="@color/white"
                 android:textSize="32dp"
-                android:backgroundTint="#F44336"
+                android:backgroundTint="@color/Gray"
                 app:cornerRadius="36dp"/>
 
             <com.google.android.material.button.MaterialButton
@@ -244,7 +245,7 @@
                 android:text="3"
                 android:textColor="@color/white"
                 android:textSize="32dp"
-                android:backgroundTint="#F44336"
+                android:backgroundTint="@color/Gray"
                 app:cornerRadius="36dp"/>
 
             <com.google.android.material.button.MaterialButton
@@ -276,7 +277,7 @@
                 android:text="@string/AC"
                 android:textColor="@color/white"
                 android:textSize="20dp"
-                android:backgroundTint="#F44336"
+                android:backgroundTint="#FF3377"
                 app:cornerRadius="36dp"/>
 
             <com.google.android.material.button.MaterialButton
@@ -288,7 +289,7 @@
                 android:text="0"
                 android:textColor="@color/white"
                 android:textSize="32dp"
-                android:backgroundTint="#F44336"
+                android:backgroundTint="#FF8033"
                 app:cornerRadius="36dp"/>
 
             <com.google.android.material.button.MaterialButton
@@ -300,7 +301,7 @@
                 android:text="."
                 android:textColor="@color/white"
                 android:textSize="32dp"
-                android:backgroundTint="#F44336"
+                android:backgroundTint="@color/Gray"
                 app:cornerRadius="36dp"/>
 
             <com.google.android.material.button.MaterialButton

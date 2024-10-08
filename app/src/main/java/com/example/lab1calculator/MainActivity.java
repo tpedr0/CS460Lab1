@@ -17,6 +17,11 @@ import org.mozilla.javascript.Scriptable;
 
 import java.time.format.TextStyle;
 
+/**
+ * MainActivity class that implements a calculator interface.
+ * This class handles the UI and calculation logic for a basic calculator application
+ * that supports arithmetic operations, decimal numbers, and bracket operations.
+ */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     TextView resultTV, solutionTV;
@@ -29,6 +34,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     MaterialButton buttonAC, buttonDot;
 
+    /**
+     * Initializes the activity and sets up the calculator interface.
+     * The method is called when the activity is first created. It initializes all UI elements
+     * and sets up the display and assigns click listeners to all calculator buttons
+     *
+     * @param savedInstanceState If the activity is being re-initialized after previously being
+     *                           shut down, this contains the data it most recently supplied in
+     *                           onSaveInstanceState(Bundle). Otherwise, null.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,17 +80,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         assignID(buttonAC, R.id.button_AC);
         assignID(buttonDot, R.id.button_dot);
-
-
-
-
     }
 
+    /**
+     * Helper method to find a button by its ID and set its click listener
+     * Method finds a materialButton in the layout using the ID and
+     * sets the activity as its click listener.
+     *
+     * @param btn the materialbutton reference to be initialzed
+     * @param id the resource ID of the button in the layout
+     */
     void assignID(MaterialButton btn, int id) {
         btn = findViewById(id);
         btn.setOnClickListener(this);
     }
 
+    /**
+     * Handle click events for all calculator buttons
+     * Processes the button clicks, updates the display, and does
+     * calculations based on the button pressed. It handles special
+     * cases for AC and C and equals operations
+     *
+     * @param view The view (button that was clicked)
+     */
     @Override
     public void onClick(View view) {
         MaterialButton button = (MaterialButton) view;
@@ -109,6 +135,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    /**
+     *
+     * Evaluates a mathematical expression and returns the result
+     * Uses the Rhino Javascript engine to evaluate the math expression
+     * provided as a string. It handles basic arithmetic operations and returns "Err" if
+     * the expression is invalid or cannot be evaluated
+     *
+     * @param data The math expression to evaluate as a string
+     * @return The result of the eval as a string, or "Err" if eval fails
+     *
+     */
     String getResults(String data) {
         try {
             Context context = Context.enter();
